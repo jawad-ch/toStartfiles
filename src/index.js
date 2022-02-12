@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./App.css";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <section className="vh-100" style={{ backgroundColor: "#e2d5de" }}>
+      <div className="container py-5 h-100">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col col-xl-10">
+            <div className="card" style={{ borderRadius: "15px" }}>
+              <div className="card-body p-5">
+                <h6 className="mb-3">Awesome Todo List</h6>
+                <App />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
